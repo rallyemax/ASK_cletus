@@ -100,6 +100,14 @@
             index="6"
             />
     <ExtensionKeyboard
+            id="59295DFF-4A34-4DC9-86E1-8844F56F6869"
+            nameResId="@string/extension_kbd_bottom_cletus"
+            extensionKeyboardResId="@xml/ext_kbd_bottom_row_cletus"
+            extensionKeyboardType="@integer/extension_keyboard_type_bottom_row"
+            description=""
+            index="6"
+            />
+    <ExtensionKeyboard
         id="d8657c90-d910-11e2-a28f-0800200c9a66"
         nameResId="@string/extension_kbd_bottom_ng"
         extensionKeyboardResId="@xml/ext_kbd_bottom_row_ng"
