@@ -422,7 +422,7 @@ public abstract class AnySoftKeyboard extends AnySoftKeyboardWithGestureTyping i
                 if ((textFlag & EditorInfo.TYPE_TEXT_FLAG_NO_SUGGESTIONS) == EditorInfo.TYPE_TEXT_FLAG_NO_SUGGESTIONS ||
                         (textFlag & EditorInfo.TYPE_TEXT_FLAG_AUTO_COMPLETE) == EditorInfo.TYPE_TEXT_FLAG_AUTO_COMPLETE) {
                     Logger.d(TAG, "Input requested NO_SUGGESTIONS, or it is AUTO_COMPLETE by itself.");
-                    mPredictionOn = false;
+                    mPredictionOn = true; //false;
                 }
 
                 switch (variation) {
@@ -430,10 +430,12 @@ public abstract class AnySoftKeyboard extends AnySoftKeyboardWithGestureTyping i
                     case EditorInfo.TYPE_TEXT_VARIATION_WEB_EMAIL_ADDRESS:
                         Logger.d(TAG, "Setting INPUT_MODE_EMAIL as keyboard due to a TYPE_TEXT_VARIATION_EMAIL_ADDRESS input.");
                         getKeyboardSwitcher().setKeyboardMode(KeyboardSwitcher.INPUT_MODE_EMAIL, attribute, restarting);
+                        mPredictionOn = true; //false;
                         break;
                     case EditorInfo.TYPE_TEXT_VARIATION_URI:
                         Logger.d(TAG, "Setting INPUT_MODE_URL as keyboard due to a TYPE_TEXT_VARIATION_URI input.");
                         getKeyboardSwitcher().setKeyboardMode(KeyboardSwitcher.INPUT_MODE_URL, attribute, restarting);
+                        mPredictionOn = true; //false;
                         break;
                     case EditorInfo.TYPE_TEXT_VARIATION_SHORT_MESSAGE:
                         Logger.d(TAG, "Setting INPUT_MODE_IM as keyboard due to a TYPE_TEXT_VARIATION_SHORT_MESSAGE input.");
