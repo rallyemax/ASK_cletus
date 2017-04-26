@@ -32,5 +32,9 @@
               index="6"/>
     <Keyboard nameResId="@string/terminal_keyboard" layoutResId="@xml/terminal"
               id="b1c24b40-02ce-4857-9fb8-fb9e4e3b4318" index="7" description="Created with bittrance"/>
+    <Keyboard nameResId="@string/cletus_keyboard" iconResId="@drawable/ic_stat_en"
+              layoutResId="@xml/cletus" landscapeResId="@xml/cletus" id="1a2b052f-9448-43d3-a11d-1cf30283272f"
+              defaultDictionaryLocale="en" description="QWERTY Cletus keyboard"
+              index="8" />
 
 </Keyboards>
